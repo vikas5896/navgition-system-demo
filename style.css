@@ -1,0 +1,121 @@
+
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: url('home.webp') no-repeat center center/cover;
+  color: white;
+  position: relative;
+}
+
+/* Container for all elements */
+.container {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Search bar container */
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.search-bar-container input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+}
+
+.search-bar-container input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar-container button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.search-bar-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Boxes at the bottom */
+.boxes {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.boxes a {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.boxes img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.boxes img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Chatbot button */
+.chatbot-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #28A745;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.chatbot-btn:hover {
+  background-color: #218838;
+}
